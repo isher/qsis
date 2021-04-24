@@ -21,11 +21,11 @@
 
 
 body {
-    background: -moz-radial-gradient(center center, circle, #b538bc, #85298a, #85298a);
-    background: -webkit-radial-gradient(center center, circle, #b538bc, #85298a, #85298a);
-    background: -o-radial-gradient(center center, circle, #b538bc, #85298a, #85298a);
-    background: -ms-radial-gradient(center center, circle, #b538bc, #85298a, #85298a);
-    background: radial-gradient(center center, circle, #b538bc, #85298a, #85298a);
+    background: -moz-radial-gradient(center center, circle, #b538bc, #3b2048, #85298a);
+    background: -webkit-radial-gradient(center center, circle, #b538bc, #3b2048, #85298a);
+    background: -o-radial-gradient(center center, circle, #b538bc, #3b2048, #85298a);
+    background: -ms-radial-gradient(center center, circle, #b538bc, #3b2048, #85298a);
+    background: radial-gradient(center center, circle, #b538bc, #3b2048, #85298a);
 		font-family:Koshgarian-Ligh;
     color:#fff;
     }
