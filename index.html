@@ -233,18 +233,9 @@ body {
     <div class="grid">
         <!-- 第一个卡片：认知心理 -->
         <div class="card">
-            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402750989003309060"
-                     onclick="
-         const isMobile = /Android|iPhone|iPod|iPad/.test(navigator.userAgent);
-         if (isMobile) {
-           if (confirm('建议在微信打开，是否打开微信？')) {
-             // 微信官方专辑链接唤起格式，删除锚点后直接编码
-             location.href = 'weixin://dl/business/?t=' + encodeURIComponent(this.href);
-             return false;
-           }
-         } 
-       "
-    >
+<a href="javascript:void(0);"
+               onclick="copyWechatLink('https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402750989003309060', '认知心理')"
+            >
                 <h3>认知心理</h3>
                 <p>认知逻辑与心理洞察</p>
             </a>
