@@ -5,8 +5,8 @@
 <meta name="theme-color" content="#440036">
 <meta name="msapplication-TileColor" content="#440036">
 <link rel="shortcut icon" href="/favicon.ico">
-<meta name="keywords" centent="深悟笔记,乔硕,QsisW,QsisW.G,Qsis.W,Qsis.Wb,QsisW高速写作平台,QsisW.B-blog,blog,quickwrite,demo,博客演示,php博客" />
-<meta name="description" centent="深悟笔记是乔硕的第一个作品，域名https://isher.qsis.cn，而优速系统（Quality Speed Intelligence System - QSIS）是一个可以百变的高速写作平台,高速信息系统是isher.Qiao于QED.cn项目分类出来的一个基于txt记录形式而建立的一个高速系统，为抛弃臃肿的数据库环境而建立的边界系统。你可以用他来做任何你想做的网站或者系统的一部分" />
+<meta name="keywords" content="深悟笔记,乔硕,QsisW,QsisW.G,Qsis.W,Qsis.Wb,QsisW高速写作平台,QsisW.B-blog,blog,quickwrite,demo,博客演示,php博客" />
+<meta name="description" content="深悟笔记是乔硕的第一个作品，域名https://isher.qsis.cn，而优速系统（Quality Speed Intelligence System - QSIS）是一个可以百变的高速写作平台,高速信息系统是isher.Qiao于QED.cn项目分类出来的一个基于txt记录形式而建立的一个高速系统，为抛弃臃肿的数据库环境而建立的边界系统。你可以用他来做任何你想做的网站或者系统的一部分" />
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -25,11 +25,8 @@ var _hmt = _hmt || [];
     font-family: "PingFang SC","Microsoft YaHei",sans-serif;
 }
 
-
 body {
-    /* 保留你原页面的背景色，这里用通用浅灰，可自行修改 */
     background: #6f1765;
-    /* 页面全屏填充，无留白 */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,36 +35,22 @@ body {
 /* 主图全屏区域 */
 .main-section {
     width: 100%;
-    /* 图片容器全屏宽度 */
     text-align: center;
-    /* 图片居中 */
     padding: 20px 0;
-    background: linear-gradient(to bottom , 6f1765 0%, #6f1765 25%,  #6f1765  100%);
-    /* 上下留白，可调整 */
+    background: linear-gradient(to bottom , black 0%, #6f1765 25%,  #6f1765  100%);
 }
 .main-img {
-width:260px;
-    /* 图片全屏宽度 */
+    width:260px;
     max-width: 100%;
-    /* 不超出屏幕 */
     height: auto;
-    /* 保持比例 */
     border-radius: 0;
-    /* 全屏图片取消圆角，更贴合全屏感 */
 }
-
-
-
 
 /* 公众号专栏板块（统一背景+全屏宽度） */
 .column-wrap {
     width: 100%;
-    /* 全屏宽度 */
-background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
-
-    /* 与页面背景统一 */
+    background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     padding: 40px 20px;
-    /* 内边距，保证内容不贴边 */
 }
 .column-title {
     text-align: center;
@@ -81,12 +64,9 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    /* 卡片间距 */
     justify-content: center;
     max-width: 1200px;
-    /* 限制最大宽度，避免大屏拉伸 */
     margin: 0 auto;
-    /* 容器居中 */
 }
 /* 公众号卡片样式（增强背景+交互） */
 .card {
@@ -94,26 +74,18 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     min-width: 240px;
     max-width: 280px;
     background: #ffffff;
-    /* 卡片白色背景，对比明显 */
     border-radius: 15px;
-    /* 圆润边角更大气 */
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-    /* 轻微阴影增强层次 */
     transition: all 0.4s ease;
-    /* 过渡更丝滑 */
     border: 1px solid #eee;
-    /* 细边框增强质感 */
 }
 /* 卡片hover交互（按键按下效果） */
 .card:hover {
     transform: translateY(-8px) scale(1.02);
-    /* 上移+轻微放大 */
     box-shadow: 1px 10px rgba(0,0,0,0.1);
-    /* 阴影加深 */
     background: #af63cf;
-    /* hover轻微变色 */
     border-color: #e0e0e0;
 }
 
@@ -142,12 +114,8 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
 /* 我的站点链接板块（统一背景+全屏宽度） */
 .site-links {
     width: 100%;
-    /* 全屏宽度 */
     background:linear-gradient(to bottom, #a567c9  0%, 25%,  #6f1765    100%);
-
-    /* 与页面背景统一 */
     padding: 40px 20px;
-    /* 内边距 */
 }
 .site-title {
     font-size: 22px;
@@ -161,7 +129,6 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 40px;
-    /* 链接间距 */
     max-width: 1200px;
     margin: 0 auto;
     font-size: 18px;
@@ -171,11 +138,8 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     color: #333;
     text-decoration: none;
     padding: 12px 24px;
-    /* 按键大小 */
     background: #ffffff;
-    /* 链接按键白色背景 */
     border-radius: 8px;
-    /* 圆角按键 */
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     border: 1px solid #eee;
@@ -183,25 +147,17 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
 /* 站点链接hover（按键按下效果） */
 .site-list a:hover {
     background: #6f1765;
-    /* 背景变深 */
     color: #ffffff;
-    /* 文字变白 */
     transform: translateY(-3px);
-    /* 轻微上移 */
     box-shadow: 0 5px 12px rgba(0,0,0,0.1);
 }
-
-
-
-
 
 /* 我的站点链接板块（统一背景+全屏宽度） */
 .footer-main {
     width: 100%;
-    /* 链接间距 */
-    flex: 1; /* 核心属性！自动填充剩余空间 */
-    background: linear-gradient(to bottom, #6f1765 ,#6f1765 30% , #6f1765 75%); /* 渐变背景会铺满整个自适应高度 */
-    padding: 20px; /* 可选：保证内容不贴边 */
+    flex: 1;
+    background: linear-gradient(to bottom, #6f1765 ,#6f1765 30% , #6f1765 75%);
+    padding: 20px;
 }
 
 /* 站点链接样式（按键效果） */
@@ -209,11 +165,8 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
     color: #333;
     text-decoration: none;
     padding: 12px 24px;
-    /* 按键大小 */
     background: #ffffff;
-    /* 链接按键白色背景 */
     border-radius: 8px;
-    /* 圆角按键 */
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     border: 1px solid #eee;
@@ -221,30 +174,21 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
 /* 站点链接hover（按键按下效果） */
 .footer-main a:hover {
     background: #6f1765;
-    /* 背景变深 */
     color: #ffffff;
-    /* 文字变白 */
     transform: translateY(-3px);
-    /* 轻微上移 */
     box-shadow: 0 5px 12px rgba(0,0,0,0.1);
 }
-
 
 /* 底部备案号（贴浏览器底边） */
 .footer {
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    /* 上下内边距 */
     font-size: 14px;
     color: #666;
     background: #000;
-    /* 与页面背景统一 */
-    /* 固定在浏览器底边上方，不随滚动消失 */
     margin-top: auto;
-    /* 自动顶到页面底部 */
     border-top: 1px solid #eee;
-    /* 细边框分隔 */
 }
 .footer a {
     color: #666;
@@ -281,33 +225,84 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
 <!-- 1. 顶部全屏主图 -->
 <div class="main-section">
     <img src="logo.jfif" alt="深悟笔记" class="main-img">
-
 </div>
 
 <!-- 2. 公众号专栏板块 -->
 <div class="column-wrap">
     <div class="column-title">深悟笔记 - 公众号专栏</div>
     <div class="grid">
+        <!-- 第一个卡片：认知心理 -->
         <div class="card">
-            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402750989003309060" target="_blank">
+            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402750989003309060"
+               onclick="
+                 const isMobile = /Android|iPhone|iPod|iPad/.test(navigator.userAgent);
+                 if (isMobile) {
+                   if (confirm('建议在微信打开，是否打开微信？')) {
+                     location.href = 'weixin://dl/business/?t=' + encodeURIComponent(this.href);
+                     return false;
+                   }
+                 } else {
+                   alert('PC端将打开微信网页版，如需APP体验可复制链接到微信');
+                 }
+               "
+            >
                 <h3>认知心理</h3>
                 <p>认知逻辑与心理洞察</p>
             </a>
         </div>
+        <!-- 第二个卡片：格物思理 -->
         <div class="card">
-            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4368811626514874368" target="_blank">
+            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4368811626514874368"
+               onclick="
+                 const isMobile = /Android|iPhone|iPod|iPad/.test(navigator.userAgent);
+                 if (isMobile) {
+                   if (confirm('建议在微信打开，是否打开微信？')) {
+                     location.href = 'weixin://dl/business/?t=' + encodeURIComponent(this.href);
+                     return false;
+                   }
+                 } else {
+                   alert('PC端将打开微信网页版，如需APP体验可复制链接到微信');
+                 }
+               "
+            >
                 <h3>格物思理</h3>
                 <p>观察事物，思考本质</p>
             </a>
         </div>
+        <!-- 第三个卡片：人文笔记 -->
         <div class="card">
-            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402756278440083461" target="_blank">
+            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402756278440083461"
+               onclick="
+                 const isMobile = /Android|iPhone|iPod|iPad/.test(navigator.userAgent);
+                 if (isMobile) {
+                   if (confirm('建议在微信打开，是否打开微信？')) {
+                     location.href = 'weixin://dl/business/?t=' + encodeURIComponent(this.href);
+                     return false;
+                   }
+                 } else {
+                   alert('PC端将打开微信网页版，如需APP体验可复制链接到微信');
+                 }
+               "
+            >
                 <h3>人文笔记</h3>
                 <p>人文思考与社会观察</p>
             </a>
         </div>
+        <!-- 第四个卡片：人生成长 -->
         <div class="card">
-            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402751674755235855" target="_blank">
+            <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402751674755235855"
+               onclick="
+                 const isMobile = /Android|iPhone|iPod|iPad/.test(navigator.userAgent);
+                 if (isMobile) {
+                   if (confirm('建议在微信打开，是否打开微信？')) {
+                     location.href = 'weixin://dl/business/?t=' + encodeURIComponent(this.href);
+                     return false;
+                   }
+                 } else {
+                   alert('PC端将打开微信网页版，如需APP体验可复制链接到微信');
+                 }
+               "
+            >
                 <h3>人生成长</h3>
                 <p>自我提升与人生感悟</p>
             </a>
@@ -325,7 +320,6 @@ background: linear-gradient(to bottom, #6f1765 0%, 25%, #a567c9 100%);
         <a href="https://bbme.qsis.cn" target="_blank">北鼻的技术站</a>
     </div>
 </div>
-
 
 <!-- 4. 我的站点链接板块 -->
 <div class="footer-main">
