@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深悟笔记</title>
+    <style>
+        /* 全局样式重置，适配原有页面 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        /* 原有居中图片容器（保留你的图片浏览器样式，此处为通用居中适配） */
+        .main-img {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 40px; /* 图片与下方专栏留间距，关键！ */
+            text-align: center;
+        }
+        .main-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* 轻微圆角，提升质感 */
+        }
+        /* 公众号专栏推荐核心容器（与图片居中对齐，同宽） */
+        .note-column {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 专栏标题（大气醒目，放在卡片上方） */
+        .column-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 30px;
+            letter-spacing: 2px; /* 字间距，更大气 */
+        }
+        /* 卡片容器（弹性布局，自动换行，适配响应式） */
+        .column-card-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px; /* 卡片间距，避免拥挤 */
+        }
+        /* 专栏卡片样式（核心，大气简约） */
+        .column-card {
+            flex: 1;
+            min-width: 240px; /* 移动端最小宽度，保证不挤压 */
+            background-color: #fff;
+            border-radius: 12px; /* 圆角更柔和 */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 轻微阴影，有层次感不突兀 */
+            text-align: center;
+            padding: 30px 20px;
+            transition: all 0.3s ease; /* 过渡动画，hover更丝滑 */
+            cursor: pointer;
+        }
+        /* 卡片hover动态效果（提升交互） */
+        .column-card:hover {
+            transform: translateY(-8px); /* 轻微上移 */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* 阴影加深 */
+            background-color: #fefefe;
+        }
+        /* 卡片内文字样式 */
+        .column-card a {
+            text-decoration: none; /* 去掉下划线，更干净 */
+            color: #212529;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .column-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .column-card p {
+            font-size: 14px;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        /* 媒体查询，小屏适配（手机端） */
+        @media (max-width: 768px) {
+            .column-title {
+                font-size: 24px;
+            }
+            .column-card {
+                min-width: 100%; /* 手机端单列显示 */
+                padding: 25px 15px;
+            }
+            .main-img {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一步：原有居中主视觉图片（替换成你的图片浏览器代码即可，保留容器类名） -->
+    <div class="main-img">
+        <!-- 此处放你的居中图片代码/图片浏览器代码 -->
+        <img src="你的主视觉图片地址.jpg" alt="深悟笔记主视觉">
+    </div>
+
+    <!-- 第二步：深悟笔记公众号专栏推荐（直接保留，无需修改） -->
+    <div class="note-column">
+        <h2 class="column-title">深悟笔记 · 公众号专栏推荐</h2>
+        <div class="column-card-list">
+            <!-- 认知心理专栏 -->
+            <div class="column-card">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402750989003309060#wechat_redirect" target="_blank" rel="noopener noreferrer">
+                    <h3>认知心理</h3>
+                    <p>拆解认知谬误、时代心理与人性底层逻辑</p>
+                </a>
+            </div>
+            <!-- 格物思理专栏 -->
+            <div class="column-card">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4368811626514874368#wechat_redirect" target="_blank" rel="noopener noreferrer">
+                    <h3>格物思理</h3>
+                    <p>观日常小事，察事物本质，悟生活道理</p>
+                </a>
+            </div>
+            <!-- 人文笔记专栏 -->
+            <div class="column-card">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402756278440083461#wechat_redirect" target="_blank" rel="noopener noreferrer">
+                    <h3>人文笔记</h3>
+                    <p>穿透现象，记录人间百态，看见真实本质</p>
+                </a>
+            </div>
+            <!-- 人生成长专栏 -->
+            <div class="column-card">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzMDMwNDU2Mg==&action=getalbum&album_id=4402751674755235855#wechat_redirect" target="_blank" rel="noopener noreferrer">
+                    <h3>人生成长</h3>
+                    <p>跳出固有框架，在自我迭代中活成人生旷野</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第三步：原有页脚（无则删除，有则保留） -->
+    <div style="text-align: center; margin-top: 50px; color: #6c757d; font-size: 14px;">
+        © 2026 深悟笔记 版权所有
+    </div>
+</body>
+</html>
